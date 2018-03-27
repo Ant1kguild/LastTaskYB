@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FinalTaskYellowBelt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FinalTaskYellowBelt">
+				<Option output="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/FinalTaskYellowBelt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalTaskYellowBelt"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FinalTaskYellowBelt/fast">
+				<Option output="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/FinalTaskYellowBelt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalTaskYellowBelt/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/comparison.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/condition_parser.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/condition_parser.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/condition_parser_test.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_comparing_test.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_conversion.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser_test.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/main.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/token.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/token.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
