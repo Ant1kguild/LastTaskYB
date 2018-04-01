@@ -345,6 +345,102 @@ CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o.provides: CMakeFile
 CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o.provides.build: CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o
 
 
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: CMakeFiles/FinalTaskYellowBelt.dir/flags.make
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../database_add_date_event_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o -c /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database_add_date_event_test.cpp
+
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database_add_date_event_test.cpp > CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.i
+
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database_add_date_event_test.cpp -o CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.s
+
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.requires:
+
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.requires
+
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.provides: CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.provides.build
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.provides
+
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.provides.build: CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o
+
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o: CMakeFiles/FinalTaskYellowBelt.dir/flags.make
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o: ../list_of_events.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o -c /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.cpp
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.cpp > CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.i
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.cpp -o CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.s
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.requires:
+
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.requires
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.provides: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.provides.build
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.provides
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.provides.build: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o
+
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o: CMakeFiles/FinalTaskYellowBelt.dir/flags.make
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o: ../list_of_events_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o -c /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp > CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.i
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp -o CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.s
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.requires:
+
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.requires
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.provides: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.provides.build
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.provides
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.provides.build: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o
+
+
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: CMakeFiles/FinalTaskYellowBelt.dir/flags.make
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: ../date_event.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o -c /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.cpp
+
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.cpp > CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.i
+
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.cpp -o CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.s
+
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.requires:
+
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.requires
+
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.provides: CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.provides.build
+.PHONY : CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.provides
+
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.provides.build: CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o
+
+
 # Object files for target FinalTaskYellowBelt
 FinalTaskYellowBelt_OBJECTS = \
 "CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o" \
@@ -358,7 +454,11 @@ FinalTaskYellowBelt_OBJECTS = \
 "CMakeFiles/FinalTaskYellowBelt.dir/test_runner.cpp.o" \
 "CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o" \
 "CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o" \
-"CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o"
+"CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o" \
+"CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o" \
+"CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o" \
+"CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o" \
+"CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o"
 
 # External object files for target FinalTaskYellowBelt
 FinalTaskYellowBelt_EXTERNAL_OBJECTS =
@@ -375,9 +475,13 @@ FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/test_runner.cpp.o
 FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o
 FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o
 FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o
+FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o
+FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o
+FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o
+FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o
 FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/build.make
 FinalTaskYellowBelt: CMakeFiles/FinalTaskYellowBelt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable FinalTaskYellowBelt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable FinalTaskYellowBelt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FinalTaskYellowBelt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -397,6 +501,10 @@ CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/
 CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o.requires
 CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o.requires
 CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/date_comparing_test.cpp.o.requires
+CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o.requires
+CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o.requires
+CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o.requires
+CMakeFiles/FinalTaskYellowBelt.dir/requires: CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o.requires
 
 .PHONY : CMakeFiles/FinalTaskYellowBelt.dir/requires
 

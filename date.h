@@ -37,11 +37,6 @@ public:
     /* Сравнение даты на неравенство */
     friend bool operator!=(const Date &lhs, const Date &rhs);
 
-    /* Сравнение даты на неравенство */
-    friend bool operator<(const Date &lhs, const pair<Date, pair<std::set<std::string>, std::vector<std::string>>> &rhs);
-
-    friend bool operator<(const pair<Date, pair<std::set<std::string>, std::vector<std::string>>> &lhs, const Date &rhs);
-
     /* Сравнение даты на равенство */
     friend bool operator==(const Date &lhs, const Date &rhs);
 

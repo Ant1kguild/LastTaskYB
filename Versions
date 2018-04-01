@@ -1,0 +1,11 @@
+Version #1.3test
+- добавленна структура listOfEvents;
+- listOfEvents имеет поля std::set<std::string> orderedEvents, std::vector<std::string> sequentialEvents;
+- listOfEvents имеет свои методы addEvent, delEvent, getLastEvent, isEmpty, findSetEvent, findVecEvent;
+- listOfEvents добавленны юнит тесты для мотодов addEvent, delEvent, getLastEvent;
+
+- структура вынесенна в одельный хидер файл DateEvent;
+- изменена функция add;
+
+- в функции ParseDate добавленна проверка на ввода даты, если дата не поступила кидает исключение invalid_argument;
+

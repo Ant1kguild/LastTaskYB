@@ -24,6 +24,18 @@ CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.cpp
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/comparison.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database_add_date_event_test.cpp
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
@@ -39,6 +51,12 @@ CMakeFiles/FinalTaskYellowBelt.dir/date_conversion.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_conversion.cpp
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.cpp
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
 CMakeFiles/FinalTaskYellowBelt.dir/date_parser.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser.cpp
@@ -47,11 +65,20 @@ CMakeFiles/FinalTaskYellowBelt.dir/date_parser_test.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser_test.cpp
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.cpp
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/comparison.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/condition_parser.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/main.cpp
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h

@@ -102,6 +102,9 @@
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/database_add_date_event_test.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.cpp">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>
@@ -114,10 +117,25 @@
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_conversion.cpp">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser.cpp">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser_test.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h">

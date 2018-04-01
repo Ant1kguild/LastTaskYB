@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-
 CMakeFiles/FinalTaskYellowBelt.dir/all:
 	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/depend
 	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target FinalTaskYellowBelt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target FinalTaskYellowBelt"
 .PHONY : CMakeFiles/FinalTaskYellowBelt.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/FinalTaskYellowBelt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FinalTaskYellowBelt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FinalTaskYellowBelt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/FinalTaskYellowBelt.dir/rule

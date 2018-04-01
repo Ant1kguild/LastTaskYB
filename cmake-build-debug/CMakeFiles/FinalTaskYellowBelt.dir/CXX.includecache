@@ -39,18 +39,18 @@ set
 -
 
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
-date.h
-/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
 node.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h
-map
--
+date_event.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
 algorithm
 -
 functional
 -
-set
--
+
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/database_add_date_event_test.cpp
+database.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
 
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.cpp
 date.h
@@ -86,6 +86,22 @@ utility
 date.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
 
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.cpp
+date_event.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+list_of_events.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+date.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+map
+-
+set
+-
+vector
+-
+
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser.cpp
 date.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
@@ -93,6 +109,28 @@ date.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_parser_test.cpp
 date.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.cpp
+list_of_events.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+set
+-
+vector
+-
+string
+-
+algorithm
+-
+iostream
+-
+
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp
+list_of_events.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+test_runner.h
+/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
 
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h
 

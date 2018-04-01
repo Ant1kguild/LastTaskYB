@@ -23,9 +23,21 @@ CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../comparison.h
 CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../database.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../database.h
 CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../date.h
+CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../date_event.h
+CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../list_of_events.h
 CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../logical_operation.h
 CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../node.h
 CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.o: ../test_runner.h
+
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../comparison.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../database.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../database_add_date_event_test.cpp
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../date.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../date_event.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../list_of_events.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../logical_operation.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../node.h
+CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o: ../test_runner.h
 
 CMakeFiles/FinalTaskYellowBelt.dir/date.cpp.o: ../date.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/date.cpp.o: ../date.h
@@ -39,6 +51,12 @@ CMakeFiles/FinalTaskYellowBelt.dir/date_conversion.cpp.o: ../date.h
 CMakeFiles/FinalTaskYellowBelt.dir/date_conversion.cpp.o: ../date_conversion.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/date_conversion.cpp.o: ../test_runner.h
 
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: ../date.h
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: ../date_event.cpp
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: ../date_event.h
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: ../list_of_events.h
+CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o: ../test_runner.h
+
 CMakeFiles/FinalTaskYellowBelt.dir/date_parser.cpp.o: ../date.h
 CMakeFiles/FinalTaskYellowBelt.dir/date_parser.cpp.o: ../date_parser.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/date_parser.cpp.o: ../test_runner.h
@@ -47,10 +65,19 @@ CMakeFiles/FinalTaskYellowBelt.dir/date_parser_test.cpp.o: ../date.h
 CMakeFiles/FinalTaskYellowBelt.dir/date_parser_test.cpp.o: ../date_parser_test.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/date_parser_test.cpp.o: ../test_runner.h
 
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o: ../list_of_events.cpp
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o: ../list_of_events.h
+
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o: ../list_of_events.h
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o: ../list_of_events_tests.cpp
+CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o: ../test_runner.h
+
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../comparison.h
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../condition_parser.h
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../database.h
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../date.h
+CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../date_event.h
+CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../list_of_events.h
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../logical_operation.h
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../main.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o: ../node.h

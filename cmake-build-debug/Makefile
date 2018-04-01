@@ -204,6 +204,33 @@ database.cpp.s:
 	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/database.cpp.s
 .PHONY : database.cpp.s
 
+database_add_date_event_test.o: database_add_date_event_test.cpp.o
+
+.PHONY : database_add_date_event_test.o
+
+# target to build an object file
+database_add_date_event_test.cpp.o:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.o
+.PHONY : database_add_date_event_test.cpp.o
+
+database_add_date_event_test.i: database_add_date_event_test.cpp.i
+
+.PHONY : database_add_date_event_test.i
+
+# target to preprocess a source file
+database_add_date_event_test.cpp.i:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.i
+.PHONY : database_add_date_event_test.cpp.i
+
+database_add_date_event_test.s: database_add_date_event_test.cpp.s
+
+.PHONY : database_add_date_event_test.s
+
+# target to generate assembly for a file
+database_add_date_event_test.cpp.s:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/database_add_date_event_test.cpp.s
+.PHONY : database_add_date_event_test.cpp.s
+
 date.o: date.cpp.o
 
 .PHONY : date.o
@@ -285,6 +312,33 @@ date_conversion.cpp.s:
 	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/date_conversion.cpp.s
 .PHONY : date_conversion.cpp.s
 
+date_event.o: date_event.cpp.o
+
+.PHONY : date_event.o
+
+# target to build an object file
+date_event.cpp.o:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o
+.PHONY : date_event.cpp.o
+
+date_event.i: date_event.cpp.i
+
+.PHONY : date_event.i
+
+# target to preprocess a source file
+date_event.cpp.i:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.i
+.PHONY : date_event.cpp.i
+
+date_event.s: date_event.cpp.s
+
+.PHONY : date_event.s
+
+# target to generate assembly for a file
+date_event.cpp.s:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.s
+.PHONY : date_event.cpp.s
+
 date_parser.o: date_parser.cpp.o
 
 .PHONY : date_parser.o
@@ -338,6 +392,60 @@ date_parser_test.s: date_parser_test.cpp.s
 date_parser_test.cpp.s:
 	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/date_parser_test.cpp.s
 .PHONY : date_parser_test.cpp.s
+
+list_of_events.o: list_of_events.cpp.o
+
+.PHONY : list_of_events.o
+
+# target to build an object file
+list_of_events.cpp.o:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o
+.PHONY : list_of_events.cpp.o
+
+list_of_events.i: list_of_events.cpp.i
+
+.PHONY : list_of_events.i
+
+# target to preprocess a source file
+list_of_events.cpp.i:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.i
+.PHONY : list_of_events.cpp.i
+
+list_of_events.s: list_of_events.cpp.s
+
+.PHONY : list_of_events.s
+
+# target to generate assembly for a file
+list_of_events.cpp.s:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.s
+.PHONY : list_of_events.cpp.s
+
+list_of_events_tests.o: list_of_events_tests.cpp.o
+
+.PHONY : list_of_events_tests.o
+
+# target to build an object file
+list_of_events_tests.cpp.o:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o
+.PHONY : list_of_events_tests.cpp.o
+
+list_of_events_tests.i: list_of_events_tests.cpp.i
+
+.PHONY : list_of_events_tests.i
+
+# target to preprocess a source file
+list_of_events_tests.cpp.i:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.i
+.PHONY : list_of_events_tests.cpp.i
+
+list_of_events_tests.s: list_of_events_tests.cpp.s
+
+.PHONY : list_of_events_tests.s
+
+# target to generate assembly for a file
+list_of_events_tests.cpp.s:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.s
+.PHONY : list_of_events_tests.cpp.s
 
 main.o: main.cpp.o
 
@@ -465,6 +573,9 @@ help:
 	@echo "... database.o"
 	@echo "... database.i"
 	@echo "... database.s"
+	@echo "... database_add_date_event_test.o"
+	@echo "... database_add_date_event_test.i"
+	@echo "... database_add_date_event_test.s"
 	@echo "... date.o"
 	@echo "... date.i"
 	@echo "... date.s"
@@ -474,12 +585,21 @@ help:
 	@echo "... date_conversion.o"
 	@echo "... date_conversion.i"
 	@echo "... date_conversion.s"
+	@echo "... date_event.o"
+	@echo "... date_event.i"
+	@echo "... date_event.s"
 	@echo "... date_parser.o"
 	@echo "... date_parser.i"
 	@echo "... date_parser.s"
 	@echo "... date_parser_test.o"
 	@echo "... date_parser_test.i"
 	@echo "... date_parser_test.s"
+	@echo "... list_of_events.o"
+	@echo "... list_of_events.i"
+	@echo "... list_of_events.s"
+	@echo "... list_of_events_tests.o"
+	@echo "... list_of_events_tests.i"
+	@echo "... list_of_events_tests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

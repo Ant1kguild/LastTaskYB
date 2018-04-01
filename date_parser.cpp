@@ -9,6 +9,9 @@
 Date ParseDate(std::istringstream &is) {
     std::string parseDate;
     is >> parseDate;
+    if (parseDate.empty()) {
+        throw invalid_argument(is.str());
+    }
     DateConversion date(parseDate);
     if (date.checkException()) {
         return {date.getYear(), date.getMonth(), date.getDay()};

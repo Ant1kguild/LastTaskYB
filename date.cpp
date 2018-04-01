@@ -72,15 +72,6 @@ bool operator>=(const Date &lhs, const Date &rhs) {
            std::tie(rhs.Year, rhs.Month, rhs.Day);
 }
 
-bool operator<(const Date &lhs, const pair<Date, pair<std::set<std::string>, std::vector<std::string>>> &rhs) {
-    return lhs < rhs.first;
-}
-
-bool operator<(const pair<Date, pair<std::set<std::string>, std::vector<std::string>>> &lhs, const Date &rhs) {
-    return lhs.first < rhs;
-}
-
-
 std::string &operator<<(std::string str,const Date &data) {
     std::setfill('0');
     std::setw(4);
