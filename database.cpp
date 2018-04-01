@@ -81,11 +81,14 @@ std::string Database::Last(const Date &date) {
     if (date < (*database.dates.begin()).first || database.dates.empty()) {
         throw invalid_argument(DateEventStr.str());
     } else {
-        auto needDate = database.dates.lower_bound(date);
-        if (needDate == database.dates.end()) { // если не нашло значение большее либо равное date
+        auto it = database.dates.find(date);
+        if (it != database.dates.end()) {
+            DateEventStr << it->first << it->second.getLastEvent();
+        } else {
+            auto needDate = database.dates.lower_bound(date);
             --needDate;
+            DateEventStr << needDate->first << needDate->second.getLastEvent();
         }
-        DateEventStr << needDate->first << needDate->second.getLastEvent();
         DateEvent = DateEventStr.str();
     }
 

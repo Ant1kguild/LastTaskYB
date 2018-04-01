@@ -114,13 +114,13 @@ void TestParseEvent() {
 }
 
 void TestAll() {
-    TestRunner tr;
-    tr.RunTest(TestParseEvent, "TestParseEvent");
-    tr.RunTest(TestDateParser, "TestDateParser");
-    tr.RunTest(TestComparingDates, "TestComparingDates");
-    tr.RunTest(TestParseCondition, "TestParseCondition");
-    tr.RunTest(TestAddDateEvent, "TestAddDateEvent");
-    tr.RunTest(TestAddEvent, "TestAddEvent");
-    tr.RunTest(TestDelEvent, "TestDelEvent");
-    tr.RunTest(TestGetLastEvent, "TestGetLastEvent");
+//    TestRunner tr;
+//    tr.RunTest(TestParseEvent, "TestParseEvent");
+//    tr.RunTest(TestDateParser, "TestDateParser");
+//    tr.RunTest(TestComparingDates, "TestComparingDates");
+//    tr.RunTest(TestParseCondition, "TestParseCondition");
+//    tr.RunTest(TestAddDateEvent, "TestAddDateEvent");
+//    tr.RunTest(TestAddEvent, "TestAddEvent");
+//    tr.RunTest(TestDelEvent, "TestDelEvent");
+//    tr.RunTest(TestGetLastEvent, "TestGetLastEvent");
 }
