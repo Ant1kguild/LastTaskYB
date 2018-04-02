@@ -72,16 +72,7 @@ bool operator>=(const Date &lhs, const Date &rhs) {
            std::tie(rhs.Year, rhs.Month, rhs.Day);
 }
 
-std::string &operator<<(std::string str,const Date &data) {
-    std::setfill('0');
-    std::setw(4);
-    str = std::to_string(data.getYear()) + "-";
-    std::setw(2);
-    str += std::to_string(data.getMonth()) + "-";
-    std::setw(2);
-    str += std::to_string(data.getDay());
-    return str;
-}
+
 
 
 

@@ -6,11 +6,11 @@
 
 
 
-Date ParseDate(std::istringstream &is) {
+Date ParseDate(std::istream &is) {
     std::string parseDate;
     is >> parseDate;
     if (parseDate.empty()) {
-        throw invalid_argument(is.str());
+        throw invalid_argument(parseDate);
     }
     DateConversion date(parseDate);
     if (date.checkException()) {

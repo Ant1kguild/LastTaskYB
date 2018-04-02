@@ -65,12 +65,11 @@ private:
 void TestDateParser();
 
 /* Преобразовывает строку к дате формата ГГ-ММ-ДД */
-Date ParseDate(std::istringstream &is);
+Date ParseDate(std::istream &is);
 
 /* Вывод даты в поток в формате ГГГГ-ММ-ДД */
 std::ostream &operator<<(std::ostream &stream, const Date &data);
 
-std::string &operator<<(std::string str, const Date &data);
 
 void TestComparingDates();
 

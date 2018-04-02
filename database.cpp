@@ -82,18 +82,17 @@ std::string Database::Last(const Date &date) {
         throw invalid_argument(DateEventStr.str());
     } else {
         auto it = database.dates.find(date);
-        if (it != database.dates.end()) {
+        if (it != database.dates.end()) { // если нашло пишем последнне событие с даты
+            if (it->second.getLastEvent().empty()) throw invalid_argument(DateEventStr.str());
             DateEventStr << it->first << it->second.getLastEvent();
-        } else {
+        } else { // иначе получаем последнне событие меньшее чем установленное
             auto needDate = database.dates.lower_bound(date);
             --needDate;
             DateEventStr << needDate->first << needDate->second.getLastEvent();
         }
         DateEvent = DateEventStr.str();
     }
-
     return DateEvent;
-
 }
 
 Cursor Database::findByPredicate(const Predicate &function,

@@ -12,3 +12,9 @@ Version #1.3test
 Version #1.3b
 - в функции Last переработана
 
+Version #1.3c
+- в функции ласт добавленна проверка на пустое событие;
+
+Version #1.3d
+- в функцию ParseDate изменено принемаемое значение на istream вместо istringstream
+
