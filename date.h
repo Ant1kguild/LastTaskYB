@@ -18,7 +18,7 @@
 
 class Date {
 public:
-    Date();
+    Date() = default;
 
     Date(int _Year, int _Month, int _Day); // Конструктор Год(_Year), Месяц(_Month), День(_Day)
 

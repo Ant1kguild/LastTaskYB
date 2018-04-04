@@ -4,7 +4,6 @@
 
 #include "date.h"
 
-Date::Date() : Year(0), Month(1), Day(1) {}
 
 Date::Date(int _Year, int _Month, int _Day)
         : Year(_Year), Month(_Month), Day(_Day) {}
