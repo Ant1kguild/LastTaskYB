@@ -22,28 +22,34 @@ void Database::Print(std::ostream &cout) {
 std::string Database::RemoveIf(const Predicate &predicate) {
     int quantity = 0;
     auto &dates = database.dates;
-    for (auto dateIterator = dates.begin(); dateIterator != dates.end();) {
-        bool eraseDate = false;
-        auto &events = dateIterator->second.sequentialEvents;
-        for (auto eventIterator = events.begin(); eventIterator != events.end();) {
-            auto const findBy = findByPredicate(predicate, dateIterator, eventIterator);
-            if (findBy == Cursor::NEXT_DATE) {
-                break;
-            }
-            if (findBy == Cursor::THIS) {
-                quantity++;
-                dateIterator->second.delEvent(*eventIterator);
-                if (dateIterator->second.isEmpty()) {
-                    dateIterator = dates.erase(dateIterator);
-                    eraseDate = true;
-                }
-
-            } else {
-                ++eventIterator;
-            }
+    Date emptyDate{};
+    std::string emptyEvent;
+    auto dellAll = predicate(emptyDate, emptyEvent);
+    if (dellAll) {
+        for (auto &i : dates) {
+            quantity += i.second.getSize();
         }
-        if (!eraseDate) {
-            ++dateIterator;
+        dates.clear();
+    } else {
+        for (auto dateIterator = dates.begin(); dateIterator != dates.end();/*++*/) {
+            auto &itDate = dateIterator->first;
+            const auto dellDate = predicate(itDate, emptyEvent);
+            if (dellDate) {
+                quantity += dateIterator->second.getSize();
+                dateIterator = dates.erase(dateIterator);
+            } else {
+                auto &itEvent = dateIterator->second.sequentialEvents;
+                for (auto eventIt = itEvent.begin(); eventIt != itEvent.end();/*++*/) {
+                  const auto dellEvent = predicate(itDate, *eventIt);
+                    if (dellEvent) {
+                        ++quantity;
+                        eventIt = itEvent.erase(eventIt);
+                    } else {
+                        ++eventIt;
+                    }
+                }
+                ++dateIterator;
+            }
         }
     }
     return to_string(quantity);
@@ -54,20 +60,15 @@ std::vector<pair<Date, std::string>>
 Database::FindIf(const Predicate &predicate) {
     std::vector<pair<Date, std::string>> quantity;
     auto &dates = database.dates;
-    for (auto dateIterator = dates.begin(); dateIterator != dates.end(); ++dateIterator) {
-        auto &events = dateIterator->second.sequentialEvents;
-        for (auto eventIterator = events.begin(); eventIterator != events.end(); ++eventIterator) {
-            auto const findBy = findByPredicate(predicate, dateIterator, eventIterator);
-            if (findBy == Cursor::NEXT_DATE) {
-                break;
-            }
-            if (findBy == Cursor::THIS) {
-                quantity.emplace_back(dateIterator->first, *eventIterator);
+    for (auto &date : dates) {
+        auto &events = date.second.sequentialEvents;
+        for (auto &event : events) {
+            auto const findBy = predicate(date.first, event);
+            if (findBy ) {
+                quantity.emplace_back(date.first, event);
             }
         }
     }
-
-
     return quantity;
 }
 
@@ -95,25 +96,6 @@ std::string Database::Last(const Date &date) {
     return DateEvent;
 }
 
-Cursor Database::findByPredicate(const Predicate &function,
-                                 map<Date, listOfEvents>::iterator dateIterator,
-                                 std::vector<string>::iterator eventIterator) {
-    auto result = function(dateIterator->first, *eventIterator);
-    switch (result.date) {
-        case Condition::Any:
-        case Condition::This:
-            switch (result.event) {
-                case Condition::Any:
-                case Condition::This:
-                    return Cursor::THIS;
-                case Condition::None:
-                    return Cursor::NEXT_EVENT;
-            }
-        case Condition::None:
-            return Cursor::NEXT_DATE;
-
-    }
-}
 
 
 std::ostream &operator<<(std::ostream &stream, const std::pair<Date, std::string> &dateEvent) {

@@ -11,9 +11,6 @@
 #include <functional>
 
 
-
-
-
 enum class Cursor {
     NEXT_DATE,
     NEXT_EVENT,
@@ -27,7 +24,7 @@ public:
 
     void Print(std::ostream &cout);
 
-    using Predicate =  std::function<PredicateIt(const Date &, const std::string &)>;
+    using Predicate =  std::function<bool(const Date &, const std::string &)>;
 
     std::string RemoveIf(const Predicate &predicate);
 
@@ -39,10 +36,6 @@ public:
 
 private:
     DateEvent database;
-
-    Cursor findByPredicate(const Predicate &function,
-                           map<Date, listOfEvents>::iterator dateIterator,
-                           std::vector<string>::iterator eventIterator);
 };
 
 std::ostream &operator<<(std::ostream &stream, const std::pair<Date, std::string> &dateEvent);

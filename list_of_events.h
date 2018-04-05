@@ -21,6 +21,8 @@ public:
 
     bool isEmpty(); // проверяет пусты ли контейнеры
 
+    uint getSize();
+
     std::set<std::string, std::less<>>::iterator
     findSetEvent(const std::string &event); // возвращаем итератор на найденное событие в set
 

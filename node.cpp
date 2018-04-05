@@ -8,20 +8,25 @@
 DateComparisonNode::DateComparisonNode(Comparison cmp, Date date)
         : _cmp(cmp), _date(date) {}
 
-PredicateIt DateComparisonNode::Evaluate(Date date, const std::string &event) {
-    switch (_cmp) {
-        case Comparison::Less:
-            return PredicateIt::createDate(date < _date);
-        case Comparison::LessOrEqual:
-            return PredicateIt::createDate(date <= _date);
-        case Comparison::Greater:
-            return PredicateIt::createDate(date > _date);
-        case Comparison::GreaterOrEqual:
-            return PredicateIt::createDate(date >= _date);
-        case Comparison::Equal:
-            return PredicateIt::createDate(date == _date);
-        case Comparison::NotEqual:
-            return PredicateIt::createDate(date != _date);
+bool DateComparisonNode::Evaluate(Date date, const std::string &event) {
+    Date emptyDate{};
+    if (emptyDate == date) {
+        return false;
+    } else {
+        switch (_cmp) {
+            case Comparison::Less:
+                return (date < _date);
+            case Comparison::LessOrEqual:
+                return (date <= _date);
+            case Comparison::Greater:
+                return (date > _date);
+            case Comparison::GreaterOrEqual:
+                return (date >= _date);
+            case Comparison::Equal:
+                return (date == _date);
+            case Comparison::NotEqual:
+                return (date != _date);
+        }
     }
 }
 
@@ -29,20 +34,20 @@ PredicateIt DateComparisonNode::Evaluate(Date date, const std::string &event) {
 EventComparisonNode::EventComparisonNode(Comparison cmp, std::string value)
         : _cmp(cmp), _value(std::move(value)) {}
 
-PredicateIt EventComparisonNode::Evaluate(Date date, const std::string &event) {
+bool EventComparisonNode::Evaluate(Date date, const std::string &event) {
     switch (_cmp) {
         case Comparison::Equal:
-            return PredicateIt::createEvent(event == _value);
+            return (event == _value);
         case Comparison::NotEqual:
-            return PredicateIt::createEvent(event != _value);
+            return (event != _value);
         case Comparison::Less:
-            return PredicateIt::createEvent(false);
+            return (false);
         case Comparison::LessOrEqual:
-            return PredicateIt::createEvent(false);
+            return (false);
         case Comparison::Greater:
-            return PredicateIt::createEvent(false);
+            return (false);
         case Comparison::GreaterOrEqual:
-            return PredicateIt::createEvent(false);
+            return (false);
     }
 }
 
@@ -53,13 +58,13 @@ LogicalOperationNode::LogicalOperationNode(const LogicalOperation &logical_opera
           _left(std::move(left)),
           _right(std::move(right)) {}
 
-PredicateIt LogicalOperationNode::Evaluate(Date date, const std::string &event) {
+bool LogicalOperationNode::Evaluate(Date date, const std::string &event) {
     auto lhs = _left.get()->Evaluate(date, event);
     auto rhs = _right.get()->Evaluate(date, event);
     switch (_logical_operation) {
         case LogicalOperation::And:
-            return PredicateIt::createLogicalOP_and(lhs, rhs);
+            return (lhs && rhs);
         case LogicalOperation::Or:
-            return PredicateIt::createLogicalOP_or(lhs, rhs);
+            return (lhs || rhs);
     }
 }
