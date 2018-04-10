@@ -11,15 +11,10 @@
 #include <functional>
 
 
-enum class Cursor {
-    NEXT_DATE,
-    NEXT_EVENT,
-    THIS
-};
-
-
 class Database {
 public:
+    Database() = default;
+
     void Add(const Date &date, const std::string &event);
 
     void Print(std::ostream &cout);
@@ -32,20 +27,14 @@ public:
 
     friend void TestAddDateEvent();
 
-    std::string Last(const Date &date);
-
-    Date getFirstDate();
+    std::pair<Date, std::string> Last(const Date &date);
 
 private:
     DateEvent database;
 
-    void deleteDateByConditions(const Predicate &function, const Date &date, listOfEvents &events, int &quantity);
-
-    void getAllEvents(const Date &date,const listOfEvents &events, vector<pair<Date, string>> &quantity);
+    void getAllEvents(const Date &date, const listOfEvents &events, vector<pair<Date, string>> &quantity);
 };
 
 std::ostream &operator<<(std::ostream &stream, const std::pair<Date, std::string> &dateEvent);
-
-std::ostream &operator<<(std::ostream &stream, const std::pair<Date, listOfEvents> &dateEvent);
 
 void TestAddDateEvent();

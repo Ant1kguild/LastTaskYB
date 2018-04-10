@@ -34,8 +34,8 @@ bool listOfEvents::isEmpty()  {
     return (orderedEvents.empty() && sequentialEvents.empty());
 }
 
-uint listOfEvents::getSize() {
-    return static_cast<uint>(sequentialEvents.size());
+unsigned long listOfEvents::getSize() {
+    return sequentialEvents.size();
 }
 
 

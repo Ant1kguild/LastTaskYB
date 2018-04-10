@@ -116,9 +116,9 @@ void TestParseEvent() {
 }
 
 void TestAll() {
-//    TestRunner tr;
-//    tr.RunTest(TestDataBaseCondition, "TestDataBaseCondition");
-//    tr.RunTest(TestParseEvent, "TestParseEvent");
+    TestRunner tr;
+    tr.RunTest(TestDataBaseCondition, "TestDataBaseCondition");
+    tr.RunTest(TestParseEvent, "TestParseEvent");
 //    tr.RunTest(TestDateParser, "TestDateParser");
 //    tr.RunTest(TestComparingDates, "TestComparingDates");
 //    tr.RunTest(TestParseCondition, "TestParseCondition");

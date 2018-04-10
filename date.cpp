@@ -40,7 +40,7 @@ std::ostream &operator<<(std::ostream &stream, const Date &data) {
     stream << std::setfill('0');
     stream << std::setw(4) << std::to_string(data.getYear()) << "-";
     stream << std::setw(2) << std::to_string(data.getMonth()) << "-";
-    stream << std::setw(2) << std::to_string(data.getDay()) << " ";
+    stream << std::setw(2) << std::to_string(data.getDay());
     return stream;
 }
 
