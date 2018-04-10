@@ -35,20 +35,26 @@ EventComparisonNode::EventComparisonNode(Comparison cmp, std::string value)
         : _cmp(cmp), _value(std::move(value)) {}
 
 bool EventComparisonNode::Evaluate(Date date, const std::string &event) {
-    switch (_cmp) {
-        case Comparison::Equal:
-            return (event == _value);
-        case Comparison::NotEqual:
-            return (event != _value);
-        case Comparison::Less:
-            return (false);
-        case Comparison::LessOrEqual:
-            return (false);
-        case Comparison::Greater:
-            return (false);
-        case Comparison::GreaterOrEqual:
-            return (false);
+    std::string emptyEvent;
+    if (event == emptyEvent) {
+        return false;
+    } else {
+        switch (_cmp) {
+            case Comparison::Less:
+                return (event < _value);
+            case Comparison::LessOrEqual:
+                return (event <= _value);
+            case Comparison::Greater:
+                return (event > _value);
+            case Comparison::GreaterOrEqual:
+                return (event >= _value);
+            case Comparison::Equal:
+                return (event == _value);
+            case Comparison::NotEqual:
+                return (event != _value);
+        }
     }
+
 }
 
 LogicalOperationNode::LogicalOperationNode(const LogicalOperation &logical_operation,

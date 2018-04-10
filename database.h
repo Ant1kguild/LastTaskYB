@@ -28,17 +28,24 @@ public:
 
     std::string RemoveIf(const Predicate &predicate);
 
-    std::vector<pair<Date, std::string>> FindIf(const Predicate &predicate);
+    std::vector<pair<Date, string>> FindIf(const Predicate &predicate);
 
     friend void TestAddDateEvent();
 
     std::string Last(const Date &date);
 
+    Date getFirstDate();
+
 private:
     DateEvent database;
+
+    void deleteDateByConditions(const Predicate &function, const Date &date, listOfEvents &events, int &quantity);
+
+    void getAllEvents(const Date &date,const listOfEvents &events, vector<pair<Date, string>> &quantity);
 };
 
 std::ostream &operator<<(std::ostream &stream, const std::pair<Date, std::string> &dateEvent);
 
+std::ostream &operator<<(std::ostream &stream, const std::pair<Date, listOfEvents> &dateEvent);
 
 void TestAddDateEvent();

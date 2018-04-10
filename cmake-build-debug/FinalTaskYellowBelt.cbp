@@ -150,6 +150,9 @@
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>
+		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_db_all.cpp">
+			<Option target="FinalTaskYellowBelt"/>
+		</Unit>
 		<Unit filename="/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.cpp">
 			<Option target="FinalTaskYellowBelt"/>
 		</Unit>

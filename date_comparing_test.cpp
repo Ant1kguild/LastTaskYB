@@ -17,7 +17,7 @@ void TestComparingDates() {
             dates4{Date(0, 2, 2), Date(0, 2, 2), Date(0, 3, 2), Date(0, 1, 2)},
             dates5{Date(2, 2, 2), Date(2, 2, 2), Date(3, 2, 2), Date(1, 2, 2)};
     {
-        JUnit::AssertEqual(dates1.at(0), dates1.at(1), getDate(dates1.at(0)) + "==" + getDate(dates1.at(1)) + "Test #1");
+        JUnit::AssertEqual(dates1.at(0), dates1.at(1), getDate(dates1.at(0)) + "==" + getDate(dates1.at(1)) + "Test #1.cpp");
         JUnit::Assert((dates1.at(0) != dates1.at(2)), getDate(dates1.at(0)) + "!=" + getDate(dates1.at(2)) + "Test #2");
         JUnit::Assert((dates1.at(0) != dates1.at(3)), getDate(dates1.at(0)) + "!=" + getDate(dates1.at(3)) + "Test #3");
         JUnit::Assert((dates1.at(2) != dates1.at(3)), getDate(dates1.at(2)) + "!=" + getDate(dates1.at(3)) + "Test #4");

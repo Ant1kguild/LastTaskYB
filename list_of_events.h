@@ -15,7 +15,7 @@ struct listOfEvents {
 public:
     void addEvent(const std::string &event); // добовляет новое событие если его нет в списке
 
-    void delEvent(const std::string &event); // удаляет событие из контейнеров
+    void delEvent(std::vector<std::string>::iterator &it); // удаляет событие из контейнеров
 
     std::string getLastEvent(); // получить последнее событие из списка
 

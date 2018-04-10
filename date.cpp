@@ -4,6 +4,9 @@
 
 #include "date.h"
 
+Date::Date() :Year(0), Month(0), Day(0) {
+
+}
 
 Date::Date(int _Year, int _Month, int _Day)
         : Year(_Year), Month(_Month), Day(_Day) {}
@@ -70,6 +73,8 @@ bool operator>=(const Date &lhs, const Date &rhs) {
     return std::tie(lhs.Year, lhs.Month, lhs.Day) >=
            std::tie(rhs.Year, rhs.Month, rhs.Day);
 }
+
+
 
 
 

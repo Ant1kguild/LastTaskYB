@@ -91,6 +91,18 @@ CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.cpp
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/comparison.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/condition_parser.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/date_event.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/logical_operation.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_db_all.cpp
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
+ /home/ant1k/CLionProjects/TheLastFinalYellowBelt/token.h
 CMakeFiles/FinalTaskYellowBelt.dir/test_runner.cpp.o
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.cpp
  /home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h

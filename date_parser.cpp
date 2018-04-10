@@ -5,9 +5,11 @@
 #include "date.h"
 
 
-
 Date ParseDate(std::istream &is) {
-    std::string parseDate;
+    const auto noDate = is.eof();
+    if (noDate) {
+        throw invalid_argument("");
+    }
     int Year, Month, Day;
     is >> Year;
     is.ignore(1);

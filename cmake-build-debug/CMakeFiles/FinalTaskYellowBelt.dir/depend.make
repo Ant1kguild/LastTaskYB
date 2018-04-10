@@ -91,6 +91,18 @@ CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o: ../node.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o: ../node.h
 CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o: ../test_runner.h
 
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../comparison.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../condition_parser.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../database.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../date.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../date_event.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../list_of_events.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../logical_operation.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../node.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../test_db_all.cpp
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../test_runner.h
+CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o: ../token.h
+
 CMakeFiles/FinalTaskYellowBelt.dir/test_runner.cpp.o: ../test_runner.cpp
 CMakeFiles/FinalTaskYellowBelt.dir/test_runner.cpp.o: ../test_runner.h
 

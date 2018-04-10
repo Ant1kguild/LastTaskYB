@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/list_of_events_tests.cpp" "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o"
   "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/main.cpp" "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles/FinalTaskYellowBelt.dir/main.cpp.o"
   "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.cpp" "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.o"
+  "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_db_all.cpp" "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o"
   "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.cpp" "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles/FinalTaskYellowBelt.dir/test_runner.cpp.o"
   "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/token.cpp" "/home/ant1k/CLionProjects/TheLastFinalYellowBelt/cmake-build-debug/CMakeFiles/FinalTaskYellowBelt.dir/token.cpp.o"
   )

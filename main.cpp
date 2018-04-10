@@ -16,6 +16,8 @@
 
 using namespace std;
 
+void TestDataBaseCondition();
+
 // trim from start (in place)
 static inline void ltrim(std::string &s) {
     s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](int ch) {
@@ -115,6 +117,7 @@ void TestParseEvent() {
 
 void TestAll() {
 //    TestRunner tr;
+//    tr.RunTest(TestDataBaseCondition, "TestDataBaseCondition");
 //    tr.RunTest(TestParseEvent, "TestParseEvent");
 //    tr.RunTest(TestDateParser, "TestDateParser");
 //    tr.RunTest(TestComparingDates, "TestComparingDates");

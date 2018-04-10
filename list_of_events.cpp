@@ -21,11 +21,9 @@ void listOfEvents::addEvent(const std::string &event) {
     }
 }
 
-void listOfEvents::delEvent(const std::string &event) {
-    auto it1 = findSetEvent(event);
-    auto it2 = findVecEvent(event);
-    orderedEvents.erase(it1);
-    sequentialEvents.erase(it2);
+void listOfEvents::delEvent(std::vector<std::string>::iterator &it) {
+    orderedEvents.erase(*it);
+    it = sequentialEvents.erase(it);
 }
 
 std::string listOfEvents::getLastEvent()  {

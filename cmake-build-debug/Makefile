@@ -501,6 +501,33 @@ node.cpp.s:
 	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/node.cpp.s
 .PHONY : node.cpp.s
 
+test_db_all.o: test_db_all.cpp.o
+
+.PHONY : test_db_all.o
+
+# target to build an object file
+test_db_all.cpp.o:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o
+.PHONY : test_db_all.cpp.o
+
+test_db_all.i: test_db_all.cpp.i
+
+.PHONY : test_db_all.i
+
+# target to preprocess a source file
+test_db_all.cpp.i:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.i
+.PHONY : test_db_all.cpp.i
+
+test_db_all.s: test_db_all.cpp.s
+
+.PHONY : test_db_all.s
+
+# target to generate assembly for a file
+test_db_all.cpp.s:
+	$(MAKE) -f CMakeFiles/FinalTaskYellowBelt.dir/build.make CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.s
+.PHONY : test_db_all.cpp.s
+
 test_runner.o: test_runner.cpp.o
 
 .PHONY : test_runner.o
@@ -606,6 +633,9 @@ help:
 	@echo "... node.o"
 	@echo "... node.i"
 	@echo "... node.s"
+	@echo "... test_db_all.o"
+	@echo "... test_db_all.i"
+	@echo "... test_db_all.s"
 	@echo "... test_runner.o"
 	@echo "... test_runner.i"
 	@echo "... test_runner.s"

@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FinalTaskYellowBelt.dir/list_of_events.cpp.o"
   "CMakeFiles/FinalTaskYellowBelt.dir/list_of_events_tests.cpp.o"
   "CMakeFiles/FinalTaskYellowBelt.dir/date_event.cpp.o"
+  "CMakeFiles/FinalTaskYellowBelt.dir/test_db_all.cpp.o"
   "FinalTaskYellowBelt.pdb"
   "FinalTaskYellowBelt"
 )

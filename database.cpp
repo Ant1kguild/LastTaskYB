@@ -24,31 +24,32 @@ std::string Database::RemoveIf(const Predicate &predicate) {
     auto &dates = database.dates;
     Date emptyDate{};
     std::string emptyEvent;
-    auto dellAll = predicate(emptyDate, emptyEvent);
+    const auto dellAll = predicate(emptyDate, emptyEvent);
     if (dellAll) {
         for (auto &i : dates) {
             quantity += i.second.getSize();
         }
         dates.clear();
     } else {
-        for (auto dateIterator = dates.begin(); dateIterator != dates.end();/*++*/) {
-            auto &itDate = dateIterator->first;
-            const auto dellDate = predicate(itDate, emptyEvent);
+        for (auto it = dates.begin(); it != dates.end();/*++*/) {
+            const auto dellDate = predicate(it->first, emptyEvent);
             if (dellDate) {
-                quantity += dateIterator->second.getSize();
-                dateIterator = dates.erase(dateIterator);
+                quantity += it->second.getSize();
+                it = dates.erase(it);
             } else {
-                auto &itEvent = dateIterator->second.sequentialEvents;
-                for (auto eventIt = itEvent.begin(); eventIt != itEvent.end();/*++*/) {
-                  const auto dellEvent = predicate(itDate, *eventIt);
+                auto &eventsV = it->second.sequentialEvents;
+                auto &eventsS = it->second.orderedEvents;
+                for (auto itEvent = eventsV.begin(); itEvent != eventsV.end(); /*++*/) {
+                    const auto dellEvent = predicate(it->first, *itEvent);
                     if (dellEvent) {
+                        itEvent = eventsV.erase(itEvent);
+                        eventsS.erase(*itEvent);
                         ++quantity;
-                        eventIt = itEvent.erase(eventIt);
                     } else {
-                        ++eventIt;
+                        ++itEvent;
                     }
                 }
-                ++dateIterator;
+                ++it;
             }
         }
     }
@@ -56,38 +57,57 @@ std::string Database::RemoveIf(const Predicate &predicate) {
 }
 
 
-std::vector<pair<Date, std::string>>
-Database::FindIf(const Predicate &predicate) {
-    std::vector<pair<Date, std::string>> quantity;
-    auto &dates = database.dates;
-    for (auto &date : dates) {
-        auto &events = date.second.sequentialEvents;
-        for (auto &event : events) {
-            auto const findBy = predicate(date.first, event);
-            if (findBy ) {
-                quantity.emplace_back(date.first, event);
+std::vector<pair<Date, string>> Database::FindIf(const Predicate &predicate) {
+    std::vector<pair<Date, string>> quantity;
+    Date emptyDate{};
+    std::string emptyEvent;
+    const auto findAll = predicate(emptyDate, emptyEvent);
+    const auto &dates = database.dates;
+    if (findAll) {
+        for (const auto &itPair : dates) {
+            const auto &myDate = itPair.first;
+            const auto &myEvents = itPair.second.sequentialEvents;
+            for (const auto &itEvent : myEvents) {
+                quantity.emplace_back(make_pair(myDate, itEvent));
+            }
+        }
+    } else {
+        for (const auto &itPair : dates) {
+            const auto &myDate = itPair.first;
+            const auto &myEvents = itPair.second;
+            const auto findAllEvent = predicate(myDate, emptyEvent);
+            if (findAllEvent) {
+                getAllEvents(myDate, myEvents, quantity);
+            } else {
+                const auto &sequentialEvents = myEvents.sequentialEvents;
+                for (const auto &Event : sequentialEvents) {
+                    const auto findEvent = predicate(myDate, Event);
+                    if (findEvent) quantity.emplace_back(make_pair(myDate, Event));
+                }
             }
         }
     }
     return quantity;
 }
 
+
 bool operator<(std::pair<const Date, std::vector<string>> const &lhs, Date const &rhs) {
     return lhs.first < rhs;
 }
 
 std::string Database::Last(const Date &date) {
+    Date emptyDate{};
     std::string DateEvent;
     std::ostringstream DateEventStr;
-    if (date < (*database.dates.begin()).first || database.dates.empty()) {
+    auto needDate = database.dates.lower_bound(date);
+    const auto firstDate = getFirstDate();
+    if (date < firstDate) {
         throw invalid_argument(DateEventStr.str());
     } else {
         auto it = database.dates.find(date);
         if (it != database.dates.end()) { // если нашло пишем последнне событие с даты
-            if (it->second.getLastEvent().empty()) throw invalid_argument(DateEventStr.str());
             DateEventStr << it->first << it->second.getLastEvent();
         } else { // иначе получаем последнне событие меньшее чем установленное
-            auto needDate = database.dates.lower_bound(date);
             --needDate;
             DateEventStr << needDate->first << needDate->second.getLastEvent();
         }
@@ -96,6 +116,37 @@ std::string Database::Last(const Date &date) {
     return DateEvent;
 }
 
+void Database::deleteDateByConditions(const Database::Predicate &function,
+                                      const Date &date,
+                                      listOfEvents &events,
+                                      int &quantity) {
+    for (auto it = events.sequentialEvents.begin(); it != events.sequentialEvents.end(); /*it++*/) {
+        const std::string needEvent = *it;
+        const auto dellEvent = function(date, needEvent);
+        if (dellEvent) {
+            events.delEvent(it);
+            ++quantity;
+        } else {
+            ++it;
+        }
+    }
+}
+
+
+void Database::getAllEvents(const Date &date,
+                            const listOfEvents &DatesEvents,
+                            vector<pair<Date, string>> &quantity) {
+    for (const auto &event : DatesEvents.sequentialEvents) {
+        quantity.emplace_back(make_pair(date, event));
+    }
+}
+
+Date Database::getFirstDate() {
+    Date emptyDate{};
+    const auto firstDate = database.dates.lower_bound(emptyDate);
+    if (firstDate == database.dates.end()) throw invalid_argument("");
+    return firstDate->first;
+}
 
 
 std::ostream &operator<<(std::ostream &stream, const std::pair<Date, std::string> &dateEvent) {
@@ -103,3 +154,9 @@ std::ostream &operator<<(std::ostream &stream, const std::pair<Date, std::string
     return stream;
 }
 
+std::ostream &operator<<(std::ostream &stream, const std::pair<Date, listOfEvents> &dateEvent) {
+    for (const auto &it : dateEvent.second.sequentialEvents) {
+        stream << dateEvent.first << it << "\n";
+    }
+    return stream;
+}
