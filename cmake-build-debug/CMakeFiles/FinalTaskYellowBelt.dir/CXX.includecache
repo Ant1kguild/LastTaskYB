@@ -35,8 +35,6 @@ sstream
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.cpp
 database.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
-set
--
 
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
 node.h
@@ -137,28 +135,16 @@ test_runner.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/main.cpp
 iostream
 -
-stdexcept
--
 sstream
 -
 functional
--
-algorithm
--
-cctype
 -
 locale
 -
 database.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/database.h
-date.h
-/home/ant1k/CLionProjects/TheLastFinalYellowBelt/date.h
 condition_parser.h
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/condition_parser.h
-node.h
-/home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.h
-test_runner.h
-/home/ant1k/CLionProjects/TheLastFinalYellowBelt/test_runner.h
 
 /home/ant1k/CLionProjects/TheLastFinalYellowBelt/node.cpp
 node.h

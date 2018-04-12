@@ -1,22 +1,17 @@
 #include <iostream>
-#include <stdexcept>
 #include <sstream>
 #include <functional>
-#include <algorithm>
-#include <cctype>
 #include <locale>
 
 
 #include "database.h"
-#include "date.h"
 #include "condition_parser.h"
-#include "node.h"
-#include "test_runner.h"
 
 
 using namespace std;
 
-void TestDataBaseCondition();
+//void TestDataBaseCondition();
+//void TestDataBasePerf();
 
 // trim from start (in place)
 static inline void ltrim(std::string &s) {
@@ -116,9 +111,10 @@ void TestParseEvent() {
 }
 
 void TestAll() {
-    TestRunner tr;
-    tr.RunTest(TestDataBaseCondition, "TestDataBaseCondition");
-    tr.RunTest(TestParseEvent, "TestParseEvent");
+//    TestRunner tr;
+//    tr.RunTest(TestDataBaseCondition, "TestDataBaseCondition");
+//    tr.RunTest(TestParseEvent, "TestParseEvent");
+//    tr.RunTest(TestDataBasePerf, "TestDataBasePerf");
 //    tr.RunTest(TestDateParser, "TestDateParser");
 //    tr.RunTest(TestComparingDates, "TestComparingDates");
 //    tr.RunTest(TestParseCondition, "TestParseCondition");

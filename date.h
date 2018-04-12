@@ -71,6 +71,7 @@ Date ParseDate(std::istream &is);
 std::ostream &operator<<(std::ostream &stream, const Date &data);
 
 
+
 void TestComparingDates();
 
 

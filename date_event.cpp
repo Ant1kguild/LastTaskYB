@@ -7,14 +7,13 @@
 std::map<Date, listOfEvents>::iterator DateEvent::find(Date const &date) { return dates.find(date); }
 
 void DateEvent::add(Date const &date, string const &event) {
-    if (event.empty()) return;
-    auto dateIterator = find(date);
-    const bool hasDate = dateIterator != dates.end();
-    if (!hasDate) {
-        listOfEvents new_events;
-        new_events.addEvent(event);
+    if (event.empty() || event.find_first_not_of(' ') == std::string::npos) return;
+    auto itDate = find(date);
+    const bool dateAvailability = itDate != dates.end();
+    if (!dateAvailability) {
+        listOfEvents new_events(event);
         dates.insert(make_pair(date, new_events));
     } else {
-        dateIterator->second.addEvent(event);
+        itDate->second.addEvent(event);
     }
 }
