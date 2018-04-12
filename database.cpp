@@ -73,10 +73,3 @@ std::string Database::Last(const Date &date) {
         return (buffer.str());
     }
 }
-
-
-
-
-
-
-

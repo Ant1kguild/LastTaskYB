@@ -70,8 +70,6 @@ Date ParseDate(std::istream &is);
 /* Вывод даты в поток в формате ГГГГ-ММ-ДД */
 std::ostream &operator<<(std::ostream &stream, const Date &data);
 
-
-
 void TestComparingDates();
 
 
